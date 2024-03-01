@@ -41,6 +41,7 @@ parser.add_argument("-a", "--Share", action="store", help="Share Name")
 parser.add_argument("-o", "--Other", action="store", help="Other share if not in root folder")
 parser.add_argument("-U", "--Username", action="store", help="Username")
 parser.add_argument("-P", "--Password", action="store", help="Password")
+parser.add_argument("-d", "--Domain", action="store", help="DOMAIN")
 parser.add_argument("-u", "--url", action="store_true", help="URL File")
 parser.add_argument("-s", "--scf", action="store_true", help="SCF File")
 parser.add_argument("-x", "--xml", action="store_true", help="XML File")
@@ -58,6 +59,7 @@ SCF = args.scf
 XML = args.xml
 ALL = args.All
 OTHER = args.Other
+DOMAIN = args.Domain
 
 parser.parse_args(args=None if sys.argv[1:] else ['--help'])
 
